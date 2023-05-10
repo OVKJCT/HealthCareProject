@@ -5,13 +5,36 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Daily 건강기록"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:padding="30dp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Screen"
-        android:textSize="40dp"
-        android:fontFamily="@font/cafesurround"
-        android:textStyle="bold" />
+        android:text="캘린더"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="30dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="몸 상태 변화"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추천"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="30dp" />
 
 </LinearLayout>
