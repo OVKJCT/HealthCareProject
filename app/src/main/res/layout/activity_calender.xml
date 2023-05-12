@@ -11,17 +11,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Health Care"
+        android:text="캘린더 화면"
         android:textSize="40dp"
         android:fontFamily="@font/cafesurround"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Manager"
-        android:textSize="40dp"
-        android:fontFamily="@font/cafesurround"
-        android:textStyle="bold" />
 
 </LinearLayout>
