@@ -5,14 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".DailyHealthRecords">
 
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="64dp">
+
+        <Button
+            android:id="@+id/HomeButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/cafesurround"
+            android:text="메인메뉴"
+            android:textSize="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="Daily 건강기록 화면"
         android:textSize="40dp"
+        android:gravity="center"
         android:fontFamily="@font/cafesurround"
         android:textStyle="bold" />
 

@@ -5,15 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".Profile" >
+
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="64dp">
+
+        <Button
+            android:id="@+id/HomeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/cafesurround"
+            android:text="메인메뉴"
+            android:textSize="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/cafesurround"
+        android:gravity="center"
         android:text="프로필 화면"
         android:textSize="40dp"
-        android:fontFamily="@font/cafesurround"
         android:textStyle="bold" />
 
 
 </LinearLayout>
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Exercise">
+
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="64dp" >
+
+        <Button
+            android:id="@+id/BackButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/cafesurround"
+            android:text="뒤로가기"
+            android:textSize="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="운동1"
+            android:textSize="20dp"
+            android:fontFamily="@font/cafesurround"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="운동2"
+            android:textSize="20dp"
+            android:fontFamily="@font/cafesurround"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="운동3"
+            android:textSize="20dp"
+            android:fontFamily="@font/cafesurround"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="운동4"
+            android:textSize="20dp"
+            android:fontFamily="@font/cafesurround"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="운동5"
+            android:textSize="20dp"
+            android:fontFamily="@font/cafesurround"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

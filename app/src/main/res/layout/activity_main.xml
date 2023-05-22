@@ -20,6 +20,7 @@
         android:padding="10dp"
         android:text="Profile"
         android:textSize="25dp"
+        android:fontFamily="@font/cafesurround"
         android:layout_margin="70dp" />
 
     <Button
@@ -29,6 +30,7 @@
         android:padding="30dp"
         android:text="Daily 건강기록"
         android:textSize="20dp"
+        android:fontFamily="@font/cafesurround"
         android:textStyle="bold"
         android:layout_margin="10dp" />
 
@@ -39,6 +41,7 @@
         android:padding="30dp"
         android:text="캘린더"
         android:textSize="20dp"
+        android:fontFamily="@font/cafesurround"
         android:textStyle="bold"
         android:layout_margin="10dp" />
 
@@ -49,6 +52,7 @@
         android:padding="30dp"
         android:text="몸 상태 변화"
         android:textSize="20dp"
+        android:fontFamily="@font/cafesurround"
         android:textStyle="bold"
         android:layout_margin="10dp" />
 
@@ -59,6 +63,7 @@
         android:padding="30dp"
         android:text="추천"
         android:textSize="20dp"
+        android:fontFamily="@font/cafesurround"
         android:textStyle="bold"
         android:layout_margin="10dp" />
 
