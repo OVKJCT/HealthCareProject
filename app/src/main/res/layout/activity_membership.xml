@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Membership"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="64dp">
+
+        <Button
+            android:id="@+id/LoginBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/cafesurround"
+            android:padding="5dp"
+            android:text="뒤로가기"
+            android:textSize="10dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="회원가입"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="E-mail"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EmailAddressText2"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="Password"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/PasswordText2"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/MembershipButton2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/cafesurround"
+            android:padding="5dp"
+            android:text="가입하기"
+            android:textSize="15dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
