@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcareproject.databinding.ActivityBodyCheckBinding
-import com.example.healthcareproject.databinding.ActivityCalenderBinding
+import com.example.healthcareproject.databinding.ActivityCalendarBinding
 
 class BodyCheck : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding.DailyHealthRecordsButton.setOnClickListener {startActivity(intent2)}
 
         //뷰 객체를 이용해서 버튼을 누르면 캘린더 액티비티로 전환
-        val intent3 = Intent(this, Calender::class.java)
-        binding.CalenderButton.setOnClickListener {startActivity(intent3)}
+        val intent3 = Intent(this, Calendar::class.java)
+        binding.CalendarButton.setOnClickListener {startActivity(intent3)}
 
         //뷰 객체를 이용해서 버튼을 누르면 몸 상태 변화 액티비티로 전환
         val intent4 = Intent(this, BodyCheck::class.java)
