@@ -17,5 +17,20 @@ class Exercise : AppCompatActivity() {
         val intent13 = Intent(this, Recommendation::class.java)
         binding.BackButton2.setOnClickListener {startActivity(intent13)}
 
+        val intent28 = Intent(this, Exercise1::class.java)
+        binding.exercise1Button.setOnClickListener {startActivity(intent28)}
+
+        val intent29 = Intent(this, Exercise2::class.java)
+        binding.exercise2Button.setOnClickListener {startActivity(intent29)}
+
+        val intent30 = Intent(this, Exercise3::class.java)
+        binding.exercise3Button.setOnClickListener {startActivity(intent30)}
+
+        val intent31 = Intent(this, Exercise4::class.java)
+        binding.exercise4Button.setOnClickListener {startActivity(intent31)}
+
+        val intent32 = Intent(this, Exercise5::class.java)
+        binding.exercise5Button.setOnClickListener {startActivity(intent32)}
+
     }
 }

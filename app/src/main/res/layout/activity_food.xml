@@ -30,6 +30,7 @@
         android:orientation="vertical" >
 
         <Button
+            android:id="@+id/disease1Button"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:padding="30dp"
@@ -40,6 +41,7 @@
             android:layout_margin="10dp" />
 
         <Button
+            android:id="@+id/disease2Button"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:padding="30dp"
@@ -50,6 +52,7 @@
             android:layout_margin="10dp" />
 
         <Button
+            android:id="@+id/disease3Button"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:padding="30dp"
@@ -60,6 +63,7 @@
             android:layout_margin="10dp" />
 
         <Button
+            android:id="@+id/disease4Button"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:padding="30dp"
@@ -70,6 +74,7 @@
             android:layout_margin="10dp" />
 
         <Button
+            android:id="@+id/disease5Button"
             android:layout_width="338dp"
             android:layout_height="wrap_content"
             android:padding="30dp"
