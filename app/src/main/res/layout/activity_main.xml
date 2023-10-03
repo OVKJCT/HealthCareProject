@@ -50,7 +50,7 @@
         android:layout_width="338dp"
         android:layout_height="wrap_content"
         android:padding="30dp"
-        android:text="몸 상태 변화"
+        android:text="Todo 리스트"
         android:textSize="20dp"
         android:fontFamily="@font/cafesurround"
         android:textStyle="bold"

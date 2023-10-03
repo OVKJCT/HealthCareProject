@@ -23,14 +23,10 @@
 
     </LinearLayout>
 
-    <TextView
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="몸 상태 변화 화면"
-        android:textSize="40dp"
-        android:gravity="center"
-        android:fontFamily="@font/cafesurround"
-        android:textStyle="bold" />
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

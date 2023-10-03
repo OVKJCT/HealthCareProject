@@ -22,6 +22,9 @@ class Recommendation : AppCompatActivity() {
         val intent7 = Intent(this, Exercise::class.java)
         binding.ExerciseButton.setOnClickListener { startActivity(intent7) }
 
+        val intent17 = Intent(this, Nutrient::class.java)
+        binding.NutrientButton.setOnClickListener { startActivity(intent17) }
+
         val intent11 = Intent(this, MainActivity::class.java)
         binding.HomeButton5.setOnClickListener { startActivity(intent11) }
     }

@@ -3,8 +3,11 @@ package com.example.healthcareproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListAdapter
+import android.widget.ListView
 import com.example.healthcareproject.databinding.ActivityBodyCheckBinding
-import com.example.healthcareproject.databinding.ActivityCalendarBinding
+
 
 class BodyCheck : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +19,7 @@ class BodyCheck : AppCompatActivity() {
 
         val intent10 = Intent(this, MainActivity::class.java)
         binding.HomeButton4.setOnClickListener {startActivity(intent10)}
+
 
     }
 }
