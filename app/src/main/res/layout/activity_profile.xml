@@ -17,20 +17,135 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:fontFamily="@font/cafesurround"
+            android:padding="5dp"
             android:text="메인메뉴"
-            android:textSize="10dp"
-            android:padding="5dp"/>
+            android:textSize="10dp" />
 
     </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/cafesurround"
+        android:layout_height="92dp"
         android:gravity="center"
-        android:text="프로필 화면"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="프로필 입력"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="이름"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="나이"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserAge"
+            android:layout_width="233dp"
+            android:layout_height="50dp"
+            android:inputType="text|number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="키(cm)"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserHeight"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:inputType="text|number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cafesurround"
+            android:text="몸무게(kg)"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserWeight"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:inputType="text|number" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/UserProfileButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/cafesurround"
+            android:padding="5dp"
+            android:text="입력완료"
+            android:textSize="15dp">
+
+        </Button>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
