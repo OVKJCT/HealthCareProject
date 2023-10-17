@@ -34,7 +34,7 @@ class Profile : AppCompatActivity() {
 
         val myRef = database.getReference("message")
 
-        myRef.setValue("Success!!!")
+        myRef.setValue("Success!")
 
     }
 }
