@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthCareProject"
         tools:targetApi="31">
+
         <activity
             android:name=".Nutrient5"
             android:exported="false" />
@@ -58,10 +59,6 @@
             android:name=".Disease1"
             android:exported="false" />
         <activity
-            android:name=".ui.login.Login123Activity"
-            android:exported="false"
-            android:label="@string/title_activity_login123" />
-        <activity
             android:name=".Nutrient"
             android:exported="false" />
         <activity
@@ -89,8 +86,9 @@
             android:name=".BodyCheck"
             android:exported="false" />
         <activity
-            android:name=".Calender"
-            android:exported="false" />
+            android:name=".Calendar"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".DailyHealthRecords"
             android:exported="false" />
