@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.healthcareproject.databinding.ActivityLoginBinding
-import com.example.healthcareproject.databinding.ActivityRecommendationBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-private lateinit var auth : FirebaseAuth
+private var auth : FirebaseAuth = Firebase.auth
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +48,16 @@ class Login : AppCompatActivity() {
                     }
                 }
         }
+
+        val userUID = auth.currentUser?.uid.orEmpty()
+
+        val addFB = Firebase.database.reference.child("Users").child(userUID)
+
+        val userINMP = mutableMapOf<String,Any>()
+
+        userINMP["user ID"] = userUID
+
+        addFB.updateChildren(userINMP)
 
     }
 }
