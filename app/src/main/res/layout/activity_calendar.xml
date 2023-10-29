@@ -1,49 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SplashActivity">
+    tools:context=".Calendar">
 
-    <LinearLayout
-        android:layout_width="106dp"
-        android:layout_height="64dp">
+    <Button
+        android:id="@+id/HomeButton3"
+        android:layout_width="74dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cafesurround"
+        android:padding="5dp"
+        android:text="메인메뉴"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/HomeButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:fontFamily="@font/cafesurround"
-            android:text="메인메뉴"
-            android:textSize="10dp"
-            android:padding="5dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <CalendarView
+        android:id="@+id/calendarView"
         android:layout_width="414dp"
-        android:layout_height="350dp">
+        android:layout_height="329dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/diarytextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeButton3"
+        tools:ignore="MissingConstraints" />
 
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/diarytextView"
+        android:layout_width="162dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:fontFamily="@font/cafesurround"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/textInputLayout"
+        android:layout_width="411dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/savebutton"
+        app:layout_constraintTop_toBottomOf="@+id/diarytextView"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="421dp"
-            android:layout_height="317dp"
-            android:hint="memo" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용을 입력하세요"
+            android:fontFamily="@font/cafesurround" />
     </com.google.android.material.textfield.TextInputLayout>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/cafesurround"
+        android:padding="5dp"
+        android:text="삭제"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/modifybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/cafesurround"
+        android:padding="5dp"
+        android:text="수정"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/cafesurround"
+        android:padding="5dp"
+        android:text="저장"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/modifybutton"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/deletebutton"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

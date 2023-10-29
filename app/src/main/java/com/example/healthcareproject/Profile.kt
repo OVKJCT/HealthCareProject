@@ -37,6 +37,8 @@ class Profile : AppCompatActivity() {
             val age: String = binding.UserAge.text.toString()
             val height: String = binding.UserHeight.text.toString()
             val weight: String = binding.UserWeight.text.toString()
+            val bloodpressure: String = binding.UserBloodPressure.text.toString()
+            val sugarlevel: String = binding.UserSugarLevel.text.toString()
 
             val userUID2 = auth.currentUser?.uid.orEmpty()
 
@@ -51,6 +53,10 @@ class Profile : AppCompatActivity() {
             userINMP2["height"] = height
 
             userINMP2["weight"] = weight
+
+            userINMP2["bloodpressure"] = bloodpressure
+
+            userINMP2["sugarlevel"] = sugarlevel
 
             addFB2.updateChildren(userINMP2)
 
