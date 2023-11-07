@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.SyncStateContract.Helpers.update
+import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,7 +46,6 @@ class BodyCheck : AppCompatActivity() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-
         binding.addbutton.setOnClickListener {
             var edittext = EditText(this)
 
@@ -68,6 +68,16 @@ class BodyCheck : AppCompatActivity() {
 
         binding.tododeletebutton.setOnClickListener {
 
+            val checkbox123 = findViewById<CheckBox>(R.id.checkBox123)
+
+            checkbox123.setOnCheckedChangeListener { _, isChecked ->
+
+                if(checkbox123.isChecked) {
+
+                }
+
+            }
+
         }
 
     }
@@ -77,16 +87,18 @@ class BodyCheck : AppCompatActivity() {
 
         data class USERS(
             val ID: String? = null,
+            val MEMO: List<String>? = null,
             val Todolist: List<String>? = null,
         )
 
         val users = USERS (
             userUID3,
-            arrayListOf(TODO)
+            null,
+            arrayListOf(TODO),
         )
 
 
-        STORE.collection("USERS").document("users").set(users)
+        STORE.collection("USERS").document("users").update("users", users)
     }
 
 }

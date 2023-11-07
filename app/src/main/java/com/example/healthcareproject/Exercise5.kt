@@ -19,5 +19,8 @@ class Exercise5 : AppCompatActivity() {
         val intent37 = Intent(this, Exercise::class.java)
         binding.BackToExerciseButton5.setOnClickListener {startActivity(intent37)}
 
+        val intent58 = Intent(this, Exer5ex::class.java)
+        binding.Exercise5ExButton.setOnClickListener {startActivity(intent58)}
+
     }
 }

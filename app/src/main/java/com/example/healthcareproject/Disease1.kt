@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.healthcareproject.databinding.ActivityDisease1Binding
 
-
 class Disease1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,5 +16,8 @@ class Disease1 : AppCompatActivity() {
 
         val intent18 = Intent(this, Food::class.java)
         binding.BackToFoodButton1.setOnClickListener {startActivity(intent18)}
+
+        val intent59 = Intent(this, Dis1ex::class.java)
+        binding.Disease1ExButton.setOnClickListener {startActivity(intent59)}
     }
 }

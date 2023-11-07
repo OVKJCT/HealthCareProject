@@ -13,6 +13,51 @@
         android:theme="@style/Theme.HealthCareProject"
         tools:targetApi="31">
         <activity
+            android:name=".Nutr5ex"
+            android:exported="false" />
+        <activity
+            android:name=".Nutr4ex"
+            android:exported="false" />
+        <activity
+            android:name=".Nutr3ex"
+            android:exported="false" />
+        <activity
+            android:name=".Nutr2ex"
+            android:exported="false" />
+        <activity
+            android:name=".Nutr1ex"
+            android:exported="false" />
+        <activity
+            android:name=".Exer5ex"
+            android:exported="false" />
+        <activity
+            android:name=".Exer4ex"
+            android:exported="false" />
+        <activity
+            android:name=".Exer3ex"
+            android:exported="false" />
+        <activity
+            android:name=".Exer2ex"
+            android:exported="false" />
+        <activity
+            android:name=".Exer1ex"
+            android:exported="false" />
+        <activity
+            android:name=".Dis5ex"
+            android:exported="false" />
+        <activity
+            android:name=".Dis4ex"
+            android:exported="false" />
+        <activity
+            android:name=".Dis3ex"
+            android:exported="false" />
+        <activity
+            android:name=".Dis2ex"
+            android:exported="false" />
+        <activity
+            android:name=".Dis1ex"
+            android:exported="false" />
+        <activity
             android:name=".fdfffffff"
             android:exported="false" />
         <activity

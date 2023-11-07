@@ -18,5 +18,8 @@ class Disease3 : AppCompatActivity() {
         val intent22 = Intent(this, Food::class.java)
         binding.BackToFoodButton3.setOnClickListener {startActivity(intent22)}
 
+        val intent61 = Intent(this, Dis3ex::class.java)
+        binding.Disease3ExButton.setOnClickListener {startActivity(intent61)}
+
     }
 }

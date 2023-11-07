@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exer4ex">
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="106dp"
+        android:layout_height="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/BackToExercise4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/cafesurround"
+            android:padding="5dp"
+            android:text="뒤로가기"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/Exer4ExButton1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="7dp"
+        android:background="#00ff0000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        app:srcCompat="@drawable/exer1ex1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Exer4ExButton2"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="#00ff0000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Exer4ExButton1"
+        app:srcCompat="@drawable/exer4ex2"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

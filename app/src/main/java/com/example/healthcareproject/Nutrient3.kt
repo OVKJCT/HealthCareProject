@@ -18,5 +18,8 @@ class Nutrient3 : AppCompatActivity() {
         val intent45 = Intent(this, Nutrient::class.java)
         binding.BackToNutrientButton3.setOnClickListener {startActivity(intent45)}
 
+        val intent71 = Intent(this, Nutr3ex::class.java)
+        binding.Nutrient3Button.setOnClickListener {startActivity(intent71)}
+
     }
 }

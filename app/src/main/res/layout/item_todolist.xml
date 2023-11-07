@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBox123"
         android:layout_width="83dp"
         android:layout_height="85dp"
         android:layout_marginStart="72dp"

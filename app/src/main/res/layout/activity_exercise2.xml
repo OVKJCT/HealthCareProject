@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +8,10 @@
     tools:context=".Exercise2">
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="106dp"
-        android:layout_height="64dp">
+        android:layout_height="64dp"
+        tools:ignore="MissingConstraints">
 
         <Button
             android:id="@+id/BackToExerciseButton2"
@@ -17,20 +19,36 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:fontFamily="@font/cafesurround"
-            android:text="메인메뉴"
-            android:textSize="10dp"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:text="뒤로가기"
+            android:textSize="10dp" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="315dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:srcCompat="@drawable/exer2" />
+
+
+    <Button
+        android:id="@+id/Exercise2ExButton"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="127dp"
         android:fontFamily="@font/cafesurround"
-        android:gravity="center"
-        android:text="설명 화면"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        android:text="추천운동"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,7 +56,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/cafesurround"
             android:padding="20dp"
-            android:text="영양제"
+            android:text="영양소"
             android:textSize="30dp" />
 
     </LinearLayout>

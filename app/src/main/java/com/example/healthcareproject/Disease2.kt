@@ -17,5 +17,9 @@ class Disease2 : AppCompatActivity() {
 
         val intent20 = Intent(this, Food::class.java)
         binding.BackToFoodButton2.setOnClickListener {startActivity(intent20)}
+
+        val intent60 = Intent(this, Dis2ex::class.java)
+        binding.Disease2ExButton.setOnClickListener {startActivity(intent60)}
+
     }
 }
